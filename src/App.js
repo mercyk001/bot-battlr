@@ -26,7 +26,8 @@ function App() {
   };
 
   const dischargeBot = (bot) => {
-    fetch(`http://localhost:8001/bots/${bot.id}`, { method: 'DELETE' })
+    fetch(`http://localhost:8001/bots/${bot.id}`,
+       { method: 'DELETE' })
       .then(() => {
         setArmy(army.filter(b => b.id !== bot.id));
         setBots(bots.filter(b => b.id !== bot.id));
@@ -35,8 +36,9 @@ function App() {
   };
 
   return (
-    <div className="container text-center">
+    <div className="container text-center bg-success p-3 ">
       <h1 className="my-4">Bot Army Recruitment</h1>
+      <p>Welcome to <strong>Bot Battlr</strong>, the one and only spot in the known universe where you can custom build your own Bot Army! </p>
       <YourBotArmy army={army} releaseBot={releaseBot} dischargeBot={dischargeBot} />
       <BotCollection bots={bots} enlistBot={enlistBot} />
     </div>
