@@ -17,4 +17,4 @@ Bot Battlr is a React-based web app designed to help users browse, select, and m
 
 # LIVE DEMO
 
-Here is the deployedclink to the live demo of this app: 
+Here is the deployedclink to the live demo of this app: https://bot-battlr-1-xben.onrender.com
