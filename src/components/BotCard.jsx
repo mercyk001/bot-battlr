@@ -1,5 +1,5 @@
 import React from 'react';
-import { Card, Button } from 'react-bootstrap';  // This stays, since you are using React-Bootstrap components
+import { Card, Button } from 'react-bootstrap'; 
 
 function BotCard({ bot, onClick, onDischarge, showDischarge }) {
   return (
